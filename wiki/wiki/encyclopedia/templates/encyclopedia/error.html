@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Error: Page not Found
+{% endblock %}
+
+{% block body %}
+    <h1>{{ message }}</h1>
+
+    <img height="300" src="{% static 'encyclopedia/cat.jpg' %}">
+{% endblock %}

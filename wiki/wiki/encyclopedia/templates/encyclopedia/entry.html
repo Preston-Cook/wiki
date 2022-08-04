@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Encyclopedia: {{ title }}
+{% endblock %}
+
+{% block body %}
+
+    {{ page_text | safe }}
+    <hr>
+    <a href="/edit/{{ title }}">
+        <button type="submit">Edit Page</button>
+    </a>
+{% endblock %}
